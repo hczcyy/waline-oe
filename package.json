@@ -1,0 +1,31 @@
+{
+  "name": "waline-on-edgeone",
+  "version": "1.0.0",
+  "description": "Waline-compatible comment system backend running on EdgeOne Edge Functions with KV",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "node --test tests/comment-performance.test.mjs tests/security-validation.test.mjs",
+    "dev": "echo 'EdgeOne local dev not configured'",
+    "deploy": "echo 'Deploy via EdgeOne console or CLI'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuyilingwei/Waline_On_Worker.git"
+  },
+  "keywords": [
+    "waline",
+    "edgeone",
+    "comment-system",
+    "kv"
+  ],
+  "author": "wuyilingwei",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "hono": "^4.12.9"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}
